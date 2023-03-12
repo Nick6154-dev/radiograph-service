@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: radiograph-service
+server:
+  port: 8000
+env:
+  size-image: 224
+  model-path: 'src\main\resources\modelo_radiografia'
+  input-node-name: 'serving_default_keras_layer_1_input:0'
+  output-node-name: 'StatefulPartitionedCall:0'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
